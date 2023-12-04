@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300&display=swap");
+.header__container {
+  display: flex;
+  justify-content: center;
+  color: #61463A;
+  font-family: "Cormorant Unicase", serif;
+  font-size: 2.5rem;
+  width: 100vw;
+}
+.header__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  background-color: black;
+}
+.header__bar-top {
+  top: 0;
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  height: 120px;
+  background-color: black;
+  z-index: 1;
+  overflow: hidden;
+  transition: height 0.5s ease-in-out;
+}
+.header__bar-top.visible {
+  height: 0vh;
+  transition: height 0.5s ease-in-out;
+}
+.header__bar-bottom {
+  bottom: 0;
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  height: 120px;
+  background-color: black;
+  z-index: 1;
+  overflow: hidden;
+  transition: height 0.5s ease-in-out;
+}
+.header__bar-bottom.visible {
+  height: 0vh;
+  transition: height 0.5s ease-in-out;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.slide {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+main {
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-x: hidden;
+  /* pour ie et mozilla */
+  -ms-overlow-style: none;
+  scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.main__container {
+  display: flex;
+  flex-direction: row;
+  width: 200vw;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+}
+
+.presentation {
+  background-color: #F7F3E3;
+}
+
+/*# sourceMappingURL=main.css.map */

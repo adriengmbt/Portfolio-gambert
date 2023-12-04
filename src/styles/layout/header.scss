@@ -1,0 +1,55 @@
+.header {
+
+    &__container {
+        display: flex;
+        justify-content: center;
+        color: $primary;
+        font-family: 'Cormorant Unicase', serif;
+        font-size: $xxl-sz;
+        width: 100vw;
+
+    }
+
+
+
+    &__video {
+      position: absolute;
+            top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+        overflow: hidden;
+        transition: all 0.5s ease-in-out;
+        background-color: black;
+   
+        }
+
+    &__bar-top{
+            top: 0;
+            @include bar-black;
+            overflow: hidden;
+            transition: height 0.5s ease-in-out;
+            &.visible {
+                height: 0vh;
+                transition: height 0.5s ease-in-out;
+              }
+  
+              }
+    
+        &__bar-bottom{
+            bottom: 0;
+            @include bar-black;
+            overflow: hidden;
+            transition: height 0.5s ease-in-out;
+
+            &.visible {
+                height: 0vh; 
+                transition: height 0.5s ease-in-out;
+              }
+      
+        }
+
+        
+}

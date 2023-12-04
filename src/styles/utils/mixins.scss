@@ -1,0 +1,10 @@
+//mixins
+
+@mixin bar-black {
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    height: 120px;
+    background-color: black;
+    z-index: 1;
+}
