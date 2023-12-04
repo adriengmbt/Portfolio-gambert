@@ -8,7 +8,7 @@ function Header() {
 
   useEffect(() => {
     const handleWheel = (event) => {
-      if (event.deltaY != 0) {
+      if (event.deltaY !== 0) {
         setVideoSource(video2);
         setShowBars(true);
         window.removeEventListener("wheel", handleWheel);
