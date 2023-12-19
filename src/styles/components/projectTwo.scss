@@ -1,0 +1,9 @@
+.projectTwo{
+    background: linear-gradient( #F9AF4E 0%, #F9E0B7 100%);
+    height: 50vh;
+    @include tablet{
+        background: linear-gradient(270deg, #F9AF4E 0%, #F9E0B7 100%);
+        height: 100vh;
+    }
+
+}

@@ -1,0 +1,7 @@
+.projectThree {
+    background: linear-gradient(#D85531 0%, #F9AF4E 100%);
+    height: 50vh;
+    @include tablet{
+        background: linear-gradient(270deg, #D85531 0%, #F9AF4E 100%);        height: 100vh;
+    }
+}

@@ -1,15 +1,57 @@
 .header {
 
     &__container {
-        display: flex;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 1fr;
         color: $primary;
         font-family: 'Cormorant Unicase', serif;
-        font-size: $xxl-sz;
+        font-size: $s-sz;
         width: 100vw;
+
+        @include tablet {
+            font-size: $xxl-sz;
+        }
 
     }
 
+
+    &__container-information {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 5rem;
+    }
+
+    &__container-subtitle {
+        display: grid;
+        font-size: $xl-sz;
+     
+    }
+
+    &__container-social-links {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding-bottom: $xl-pd;
+        font-size:$s-sz;
+        
+    }
+
+    &__social-link {
+        color: $primary;
+    }
+
+    &__subtitle {
+        width: 20rem;
+        font-family: 'Cormorant Upright', serif;
+    }
+
+    &__social-img {
+        width: 2rem;
+        margin: 1rem;
+        margin-bottom: 0;
+    }
 
 
     &__video {
@@ -30,10 +72,10 @@
             top: 0;
             @include bar-black;
             overflow: hidden;
-            transition: height 0.5s ease-in-out;
+            transition: height 1.5s ease-in-out;
             &.visible {
                 height: 0vh;
-                transition: height 0.5s ease-in-out;
+                transition: height 1.5s ease-in-out;
               }
   
               }
@@ -42,14 +84,27 @@
             bottom: 0;
             @include bar-black;
             overflow: hidden;
-            transition: height 0.5s ease-in-out;
+            transition: height 1.5s ease-in-out;
 
             &.visible {
                 height: 0vh; 
-                transition: height 0.5s ease-in-out;
+                transition: height 1.5s ease-in-out;
               }
       
         }
+
+    &__title {
+        text-align: center;
+        padding: 0 $xxxl-pd;
+        font-weight: $regular;
+        font-size: $xxl-sz;
+        margin: 0;
+        padding-top: $xl-pd ;
+    }
+
+    &__arrow {
+        width: 3rem;
+    }
 
         
 }
