@@ -10,7 +10,7 @@ function Project({ title, image, description }) {
     <div className="project__container">
       <h2 className="project__h2">{title}</h2>
       <div className="project__container-img">
-        <Fade direction="left" delay={50}>
+        <Fade direction="left" delay={100} triggerOnce>
         <img className="project__img" src={image} alt="img" />
         </Fade>
         <div className="project__position-sellotape">

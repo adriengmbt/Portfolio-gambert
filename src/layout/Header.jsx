@@ -6,10 +6,35 @@ import insta from "../assets/image/icons8-instagram-50.png";
 import linkedin from "../assets/image/icons8-linkedin-50.png";
 import github from "../assets/image/icons8-github-50.png";
 import { Fade } from "react-awesome-reveal";
+import { Howl } from 'howler';
+import audio from "../assets/audio/audio.mp3";
+
 
 function Header() {
   const [videoSource, setVideoSource] = useState(video1);
   const [showBars, setShowBars] = useState(false);
+
+  const [audioInstance, setAudioInstance] = useState(null);
+
+  const startAudio = () => {
+    if (!audioInstance) {
+      const sound = new Howl({
+        src: [audio],
+        autoplay: true,
+        loop: true,
+        volume: 0.3,
+      });
+
+      setAudioInstance(sound);
+
+      // Arrêter l'audio lorsque le composant est démonté
+      return () => {
+        sound.stop();
+        setAudioInstance(null);
+      };
+    }
+  };
+
 
   useEffect(() => {
     const handleWheel = (event) => {
@@ -33,8 +58,7 @@ function Header() {
       <div className="header__video-container">
       <video className="header__video" autoPlay loop muted src={video2} preload="auto" style={{display: "none"}} />
         <video className="header__video" autoPlay loop muted src={videoSource}  />
- 
-
+        <button className="header__button" onClick={startAudio}>Start audio</button>
       </div>
 
       {showBars && (

@@ -6,6 +6,18 @@
         height: 100vh;
     }
 
+    &__img-background {
+        position: absolute;
+        bottom: 0;
+        width: 90vw;
+        height: 90%;
+        object-fit: cover;
+        overflow: hidden;
+        transition: all 0.5s ease-in-out;
+        opacity: 0.6;
+
+    }
+
     &__container {
         width: 100vw;
         display: flex;
@@ -44,6 +56,10 @@
         display: flex;
         justify-content: flex-end;
         margin: -4rem ;
+
+        @include mid-desktop{
+            width: 118%;
+        }   
     }
 
     &__img {
@@ -52,8 +68,45 @@
             width: 45rem;
             height: 25rem;
         }
+        @include mid-desktop{
+            width: 60rem;
+            height: 35rem;
+        }
             
     }
+
+    &__h2 {
+        color: #9A7752;
+        font-family: Cormorant Unicase;
+        font-size: 2.25rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding-left: 8rem;
+
+        &::before {
+            content: " ";
+            display: inline-block;
+            width: 0.6rem;
+            height: 1rem;
+            background: #9A7752;
+            margin-right: $m-mg;
+            @include tablet{
+            }
+        }
+
+    }
+
+    &__container-svg {
+        position: absolute;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        height: 100vh;
+        width: 100vw;
+        justify-items: center;
+
+    }
 }
-
-
