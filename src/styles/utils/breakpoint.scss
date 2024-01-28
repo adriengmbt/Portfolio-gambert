@@ -20,7 +20,7 @@
   }
   
   @mixin big-desktop {
-    @media only screen and (min-width: 1800px) {
+    @media only screen and (min-width: 1600px) {
       @content;
     }
   }

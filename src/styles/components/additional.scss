@@ -1,0 +1,28 @@
+.additional {
+    width: 30vw;
+    z-index: 10;
+
+    &__video {
+         position: absolute;
+        width: 30vw;
+        height: 100%;
+        object-fit: cover;
+        top: 0;
+        z-index: -1;
+            
+    }
+
+    &__container-text {
+        z-index: 11;
+        color: $primary;
+        font-family: 'Cormorant Unicase', sans-serif;
+        font-size: $xs-sz;
+    }
+
+    &__h2 {
+        text-align: center;
+        margin: 0;
+        padding-top: $xxl-pd;
+    }
+}
+

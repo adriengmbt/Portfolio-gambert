@@ -1,6 +1,8 @@
 import React from "react";
 import Header from "../layout/Header";
 import { ProjectOne , ProjectTwo, ProjectThree } from "../components/ProjectContent";
+import Additionnal from "../components/Additional";
+import Skills from "../components/Skills";
 
 function Home() {
   return (
@@ -11,7 +13,9 @@ function Home() {
         <section className="project slide"> <ProjectOne /></section> 
         <section className="project projectTwo slide"> <ProjectTwo /></section>
         <section className="project projectThree slide"> <ProjectThree /></section>
-        
+        <section className="additional slide"> <Additionnal /></section>
+        <section className="skills slide"> <Skills /></section>
+      
         </div>
    
       </main>

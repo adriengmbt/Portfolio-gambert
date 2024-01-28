@@ -6,17 +6,6 @@
         height: 100vh;
     }
 
-    &__img-background {
-        position: absolute;
-        bottom: 0;
-        width: 90vw;
-        height: 90%;
-        object-fit: cover;
-        overflow: hidden;
-        transition: all 0.5s ease-in-out;
-        opacity: 0.6;
-
-    }
 
     &__container {
         width: 100vw;
@@ -38,6 +27,7 @@
         fill: rgba(0, 0, 0, 0.85);
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         font-family: 'Cormorant Upright', serif;
+        
 
     }
 
@@ -48,6 +38,7 @@
     &__container-img {
         display: grid;
     justify-content: center;
+    z-index: 2;
     
     }
 
@@ -57,7 +48,7 @@
         justify-content: flex-end;
         margin: -4rem ;
 
-        @include mid-desktop{
+        @include big-desktop{
             width: 118%;
         }   
     }
@@ -65,10 +56,14 @@
     &__img {
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         @include tablet{
+            width: 30rem;
+            height: 20rem;
+        }
+        @include desktop{
             width: 45rem;
             height: 25rem;
         }
-        @include mid-desktop{
+        @include big-desktop{
             width: 60rem;
             height: 35rem;
         }
@@ -109,4 +104,7 @@
         justify-items: center;
 
     }
+
+
 }
+

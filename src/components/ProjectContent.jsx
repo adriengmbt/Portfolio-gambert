@@ -15,11 +15,13 @@ function ProjectOne() {
     <div className="project__container-svg">
       <Svg />
     </div>
+
     <Project
       title="First Project"
       image={img1}
       description="I was part of the development of the application as a full stack developer"
     />
+
     </>
   );
 }
@@ -28,8 +30,8 @@ function ProjectTwo() {
   return (
     <>
       <div className="project__container-background">
-      <Fade direction="top" triggerOnce delay={1000}  >
-        <img className="project__img-background" src={backgroundimg} alt="img" />
+      <Fade direction="top" triggerOnce delay={1500}  >
+        <img className="projectTwo__img-background" src={backgroundimg} alt="img" />
       </Fade>
       </div>
       <Project
@@ -44,11 +46,20 @@ function ProjectTwo() {
 
 function ProjectThree() {
     return (
+      <>
       <Project
         title="Second Project"
         image={img3}
         description="Description for the second project"
       />
+      <div className="projectThree__container-stars">
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+
+      </div>
+
+      </>
     );
   }
 

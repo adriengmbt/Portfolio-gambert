@@ -58,30 +58,30 @@ function Header() {
       <div className="header__video-container">
       <video className="header__video" autoPlay loop muted src={video2} preload="auto" style={{display: "none"}} />
         <video className="header__video" autoPlay loop muted src={videoSource}  />
-        <button className="header__button" onClick={startAudio}>Start audio</button>
+        <button className="header__button-audio" onClick={startAudio}>Start audio</button>
       </div>
 
       {showBars && (
         <div className="header__container">
           <div className="header__container-title">
-            <Fade delay={500}>
+            <Fade delay={500} triggerOnce>
             <h1 className="header__title">Gambert Adrien</h1>
             </Fade>
           </div>
           <div className="header__container-information">
             <div className="header__container-subtitle">
-            <Fade cascade delay={1000}>  
+            <Fade cascade delay={1000} triggerOnce>
             <span className="header__subtitle">Full-stack developer</span> 
             <span className="header__subtitle"> Based in Calais </span>
             <span className="header__subtitle">20 years</span>
             </Fade>
             </div>
-            <Fade delay={1500}>
+            <Fade delay={1500} triggerOnce>
             <img src={arrow} alt="arrow" className="header__arrow" />   
             </Fade> 
           </div>
           <div className="header__container-social-links">
-          <Fade cascade damping={0.5} delay={2000}>
+          <Fade cascade damping={0.5} delay={2000} triggerOnce>
             <img src ={linkedin} alt="linkedin" className="header__social-img" />
             <img src ={github} alt="github" className="header__social-img" />
             <img src ={insta} alt="insta" className="header__social-img" />

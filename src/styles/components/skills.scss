@@ -1,0 +1,126 @@
+.skills {
+    background-color: $tertiary;
+    z-index: 1000;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-evenly;
+        font-family: "Cormorant Unicase", sans-serif;
+        position: absolute;
+        width: 100vw;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    &__h2 {
+        color: #F8F3E2;
+
+
+        &::before {
+            background: #F8F3E2;
+        }
+    }
+
+    &__card {
+        width: 12rem;
+        height: 19rem;
+        border-radius: 1rem;
+        background: #F8F3E2;
+        box-shadow: -5px 5px 10.7px 1px rgba(255, 255, 255, 0.60);
+        text-align: center;
+        transition: transform 0.5s ease-in-out;
+
+
+        &:hover {
+            transform: translateY(-10px) rotateX(-1deg) rotateY(2deg) ;
+
+        }
+    }
+
+    &__card-1 {
+        transform: rotate(-17deg) ;
+    }
+
+    &__card-2 {
+        transform: rotate(7deg) ;
+    }
+
+    &__card-3 {
+        transform: rotate(11deg) ;
+    }
+
+    &__card-4 {
+        transform: rotate(-4deg) ;
+    }
+
+    &__circle {
+        width: 0.6rem;
+        height: 0.6rem;
+        border-radius: 50%;
+        padding: $xs-pd;
+
+        &::before {            
+            display: block;
+            width: 22px;
+            height: 10px;
+            margin: 10px 5px 0 10px;
+          }
+          
+    }
+
+    &__card-text{
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: space-evenly;
+    
+    }
+
+    &__card-h2 {
+        margin: 0;
+        text-align: center;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__card-content {
+        padding:0 $m-pd;
+    }
+
+    &__card-content-end {
+        padding: 0 $xl-pd;
+    }
+
+    &__card-techno {
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
+    &__position-1 {
+        height: 10%;
+
+    }
+
+    &__position-2 {
+        height: 80%;
+    }
+
+    &__position-3 {
+        height: 5%;
+    }
+
+    &__position-4 {
+        height: 50%;
+    }
+
+
+}
