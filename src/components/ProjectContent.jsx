@@ -60,7 +60,7 @@ function ProjectThree() {
     return (
       <>
       <Project
-        title="Second Project"
+        title="Third Project"
         image={img3}
         description=" Internship project as a full stack developer at Goweb during my second year of DUT"
         tilte2= "Goweb project"
