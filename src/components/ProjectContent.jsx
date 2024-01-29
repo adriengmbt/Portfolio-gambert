@@ -45,7 +45,7 @@ function ProjectTwo() {
       <Project
         title="Second Project"
         image={img2}
-        description="Description for the second project"
+        description="I was part of the development of the application as a front-end developer"
         tilte2= "Fondasol"
         description2= "The Fondasol project is a website for a company specializing in geotechnical studies. The site is composed of several pages, a home page, a page presenting the company, a page presenting the services, a page presenting the news, a page presenting the contact information and a page presenting the legal information. The main goal is to make this simple, intuitive and secure for users."
          image2={InfoImg2}
@@ -62,7 +62,7 @@ function ProjectThree() {
       <Project
         title="Second Project"
         image={img3}
-        description="Description for the second project"
+        description=" Internship project as a full stack developer at Goweb during my second year of DUT"
         tilte2= "Goweb project"
         description2= "The Goweb project is a project carried out as part of a company internship. The mission consisted of creating a fake web application for the sale of materials and others in order to learn how to manipulate data and display it correctly."
         image2={InfoImg3}
