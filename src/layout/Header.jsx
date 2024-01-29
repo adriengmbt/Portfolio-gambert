@@ -81,9 +81,15 @@ function Header() {
           </div>
           <div className="header__container-social-links">
           <Fade cascade damping={0.5} delay={2000} triggerOnce>
+            <a href="https://www.linkedin.com/in/adrien-gambert/">
             <img src ={linkedin} alt="linkedin" className="header__social-img" />
+            </a>
+            <a href="https://github.com/adriengmbt/">
             <img src ={github} alt="github" className="header__social-img" />
+            </a>
+            <a href="https://www.instagram.com/gmbt_adri/">
             <img src ={insta} alt="insta" className="header__social-img" />
+            </a>
           </Fade>
           </div>
         </div>
