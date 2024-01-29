@@ -7,7 +7,9 @@ function Skills() {
   return (
     <>
     <h2 className="project__h2 skills__h2">Skills</h2>
+
     <div className="skills__container">
+    
       <SkillCard 
         cardNumber="1"
         title="Javascript"

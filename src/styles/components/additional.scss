@@ -1,14 +1,32 @@
 .additional {
-    width: 30vw;
+    position: relative;
     z-index: 10;
+    height: 50vh;
+
+
+    @include tablet{
+    width: 30vw;
+    height: 100vh;
+    }
+
+
+    &__video-container {
+        width: 100%;
+    }
 
     &__video {
-         position: absolute;
-        width: 30vw;
+        position: absolute;
         height: 100%;
-        object-fit: cover;
-        top: 0;
         z-index: -1;
+        object-fit: cover;
+        width: 100vw;
+        top: 0;
+
+        
+        @include tablet{
+         
+        width: 30vw;
+        }
             
     }
 

@@ -10,7 +10,7 @@ const skillPosition = `skills__position skills__position-${cardNumber}`;
     <div className= {skillPosition}>
     <div className={cardClassName}>
         <div className="skills__circle">
-        <svg xmlns="http://www.w3.org/2000/svg" width="9" height="11" viewBox="0 0 9 11" fill="none">
+        <svg className="skills__svg" xmlns="http://www.w3.org/2000/svg" width="9" height="11" viewBox="0 0 9 11" fill="none">
         <path d="M9 5.5C9 8.26142 6.98528 10.5 4.5 10.5C2.01472 10.5 0 8.26142 0 5.5C0 2.73858 2.01472 0.5 4.5 0.5C6.98528 0.5 9 2.73858 9 5.5Z" fill="#01000A"/>
         </svg>
         </div>

@@ -1,18 +1,36 @@
 .skills {
     background-color: $tertiary;
     z-index: 1000;
+    height: 100vh;
+    position: relative;
+    transition: none;
+    font-family: 'Cormorant Unicase', sans-serif;
 
     &__container {
         display: flex;
         align-items: center;
-        width: 100%;
+        width: 100vw;
+        position: absolute;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 1rem;
+        top: 1.3rem;
+        height: 65%;
+
+ 
+
+        @include tablet{
+
+        display: flex;
+        align-items: center;
         justify-content: space-evenly;
         font-family: "Cormorant Unicase", sans-serif;
         position: absolute;
         width: 100vw;
-        height: 100%;
+        height: 100vh;
         object-fit: cover;
-        z-index: -1;
+        }
+        
     }
 
     &__h2 {
@@ -25,13 +43,19 @@
     }
 
     &__card {
-        width: 12rem;
-        height: 19rem;
+        width: 8rem;
+        height: 14rem;
         border-radius: 1rem;
         background: #F8F3E2;
         box-shadow: -5px 5px 10.7px 1px rgba(255, 255, 255, 0.60);
         text-align: center;
         transition: transform 0.5s ease-in-out;
+
+        @include tablet{
+        width: 12rem;
+        height: 19rem;
+        
+        }
 
 
         &:hover {
@@ -45,7 +69,12 @@
     }
 
     &__card-2 {
+        margin-left: 1rem;
         transform: rotate(7deg) ;
+
+        @include tablet{
+        margin: 0;
+        }
     }
 
     &__card-3 {
@@ -54,6 +83,10 @@
 
     &__card-4 {
         transform: rotate(-4deg) ;
+    }
+
+    &__svg {
+        height: 100%;
     }
 
     &__circle {
@@ -81,28 +114,43 @@
     }
 
     &__card-h2 {
-        margin: 0;
         text-align: center;
+        margin: 0;
+        font-size: $xs-sz;
+
+        @include tablet{
         font-size: 2rem;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+        }
     }
 
     &__card-content {
+        font-size: 0.8rem;
+        padding: 0 $s-pd;
+        @include tablet{
         padding:0 $m-pd;
+        }
     }
 
     &__card-content-end {
+        padding: 0 $l-pd;
+        @include tablet{
         padding: 0 $xl-pd;
+        }
     }
 
     &__card-techno {
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        text-align: center;
+        font-weight: 600;
+        @include tablet{
         font-size: 1.25rem;
         font-style: normal;
-        font-weight: 500;
         line-height: normal;
-        text-transform: uppercase;
+        }
     }
 
     &__position-1 {
