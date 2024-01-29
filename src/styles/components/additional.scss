@@ -38,9 +38,13 @@
     }
 
     &__h2 {
+        font-size: $s-sz;
         text-align: center;
         margin: 0;
         padding-top: $xxl-pd;
+        @include tablet{
+            font-size: $xxl-sz;
+        }
     }
 }
 

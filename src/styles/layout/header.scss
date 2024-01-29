@@ -139,13 +139,18 @@
         }
 
     &__title {
+        
         text-align: center;
         padding: 0 $xxxl-pd;
         font-weight: $regular;
-        font-size: $xxl-sz;
+        font-size: $xl-sz;
         margin: 0;
         padding-top: $xl-pd ;
         z-index: 2;
+        @include tablet{
+            font-size: $xxl-sz;
+        }
+        
     }
 
     &__arrow {

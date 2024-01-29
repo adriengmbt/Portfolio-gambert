@@ -21,20 +21,38 @@ function Header() {
       if (event.deltaY !== 0) {
         setVideoSource(video2);
         setShowBars(true);
-        window.removeEventListener("wheel", handleWheel);
+        removeEventListeners();
       }
     };
-
-    window.addEventListener("wheel", handleWheel);
-
-    return () => {
+  
+    const handleTouchMove = () => {
+      setVideoSource(video2);
+      setShowBars(true);
+      removeEventListeners();
+    };
+  
+    const addEventListeners = () => {
+      window.addEventListener("wheel", handleWheel);
+      window.addEventListener("touchmove", handleTouchMove);
+    };
+  
+    const removeEventListeners = () => {
       window.removeEventListener("wheel", handleWheel);
+      window.removeEventListener("touchmove", handleTouchMove);
+    };
+  
+    addEventListeners();
+  
+    return () => {
+      removeEventListeners();
     };
   }, []);
+  
 
 
   return (
     <>
+    
       <div className="header__video-container">
       <video className="header__video" autoPlay loop muted src={video2} preload="auto" style={{display: "none"}} />
         <video className="header__video" autoPlay loop muted src={videoSource} preload="auto"  />

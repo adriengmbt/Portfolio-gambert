@@ -163,7 +163,10 @@
     }
 
     &__position-3 {
+        height: 25%;
+        @include tablet{
         height: 5%;
+        }
     }
 
     &__position-4 {
