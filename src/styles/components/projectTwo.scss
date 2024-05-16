@@ -8,23 +8,6 @@
         height: 100vh;
     }
 
-    &__img-background {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 100vw;
 
-        @include tablet{
-         position: absolute;
-        bottom: 0;
-        width: 100vw;
-        height: 94%;
-        overflow: hidden;
-        transition: all 0.5s ease-in-out;
-        opacity: 0.6;
-        }
-
-
-    }
 
 }
