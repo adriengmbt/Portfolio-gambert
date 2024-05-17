@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import video2 from "../assets/video/Sucre_1.mp4";
+import video2 from "../assets/video/Sucre_1.webm";
 import video1 from "../assets/video/Sucre_5.mp4";
 import arrow from "../assets/image/icons8-flèche-droite-50.png";
 import insta from "../assets/image/icons8-instagram-50.png";

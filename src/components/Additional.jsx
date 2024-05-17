@@ -1,5 +1,5 @@
 import React from "react";
-import video from "../assets/video/Sucre_1.mp4";
+import video from "../assets/video/Sucre_1.webm";
 
 
 function Additionnal() {

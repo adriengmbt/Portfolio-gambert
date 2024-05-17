@@ -2,14 +2,14 @@ import React from "react";
 import Project from "./Project"; // Assurez-vous de donner le bon chemin
 
 import img1 from "../assets/image/Diapo_soutenance.png";
-import img2 from "../assets/image/fondasol.png";
+import img2 from "../assets/image/fondasol screen.png";
 import img3 from "../assets/image/Goweb.png";
-import backgroundimg from "../assets/image/building.png";
-import { Fade } from "react-awesome-reveal";
 import Svg from "./Svg";
 import InfoImg from "../assets/image/infoImg.png";
 import InfoImg2 from "../assets/image/fondasol2.png";
 import InfoImg3 from "../assets/image/gowebInfo.jpg";
+import AnimationProject2 from "../assets/Animation.json";
+import Lottie from "lottie-react";
 // Importez les images pour vos autres projets
 
 function ProjectOne() {
@@ -38,9 +38,7 @@ function ProjectTwo() {
   return (
     <>
       <div className="project__container-background">
-      <Fade direction="top" triggerOnce delay={1500}  >
-        <img className="projectTwo__img-background" src={backgroundimg} alt="img" />
-      </Fade>
+      <Lottie animationData={AnimationProject2} className="projectTwo__img-background" />
       </div>
       <Project
         title="Second Project"
