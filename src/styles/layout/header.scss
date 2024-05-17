@@ -1,18 +1,22 @@
 .header {
     position: relative;
     z-index: 100;
+    background-color: black;
 
     &__scroll-container {
         text-align: center;
         color: white ;
         width: 100%;
-        display: flex;
+        display: none;
         justify-content: center;
         align-items: center;
         position: absolute;
         top: 75%;
         z-index: 1000;
         transition: all 0.5s ease-in-out;
+        @include tablet{
+            display: flex;
+        }
     }
     &__scroll {
         background-color: rgba(8, 8, 8, 0.75);
@@ -57,10 +61,10 @@
         display: grid;
         font-size: $m-sz;
         @include tablet{
-            font-size: $xl-sz;
-         
+            font-size: $xl-sz;    
         }
         
+
      
     }
 
