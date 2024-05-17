@@ -40,10 +40,17 @@
     &__container-background {
         position: absolute;
         width: 100vw;
-        height: 50vh;
+        height: 65vh;
 
         @include tablet{
             height: 115vh;
+        }
+        @include desktop{
+            height: 120vh;
+        }
+
+        @include mid-desktop{
+            height: 130vh;
         }
     }
 
@@ -113,7 +120,7 @@
         }
 
         @include desktop{
-            width: 40%;
+            width: 35%;
         }
 
         @include mid-desktop{
@@ -127,11 +134,15 @@
     }
 
     &__description {
-        font-size: 0.5rem;
-        max-width: 10rem;
+        font-size: 0.8rem;
+        max-width: 40%;
         font-weight: 600;
         font-style: italic;
+        max-height: 8rem;
+        overflow: auto;
+
         @include tablet{
+            max-height: 15rem;
             font-size: 0.8rem;
             max-width: 25rem;
             line-height: 1.5rem;

@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import video2 from "../assets/video/Sucre_1.webm";
-import video1 from "../assets/video/Sucre_5.mp4";
+import video1 from "../assets/video/Sucre_5.webm";
 import arrow from "../assets/image/icons8-flèche-droite-50.png";
 import insta from "../assets/image/icons8-instagram-50.png";
 import linkedin from "../assets/image/icons8-linkedin-50.png";
 import github from "../assets/image/icons8-github-50.png";
 import { Fade } from "react-awesome-reveal";
-
+import ArrowAnimation from "../assets/arrowAnimation.json"
+import Lottie from "lottie-react";
 function Header() {
   const [videoSource, setVideoSource] = useState(video1);
   const [showBars, setShowBars] = useState(false);
@@ -71,12 +72,12 @@ function Header() {
             <div className="header__container-subtitle">
             <Fade cascade delay={1000} triggerOnce>
             <span className="header__subtitle">Full-stack developer</span> 
-            <span className="header__subtitle"> Based in Calais </span>
-            <span className="header__subtitle">20 years</span>
+            <span className="header__subtitle"> Based in Albi </span>
+            <span className="header__subtitle">21 years</span>
             </Fade>
             </div>
             <Fade delay={1500} triggerOnce>
-            <img src={arrow} alt="arrow" className="header__arrow" />   
+            <Lottie animationData={ArrowAnimation} className="header__arrow" loop autoPlay />
             </Fade> 
           </div>
           <div className="header__container-social-links">

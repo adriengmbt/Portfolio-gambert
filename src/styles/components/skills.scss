@@ -51,10 +51,19 @@
         text-align: center;
         transition: transform 0.5s ease-in-out;
 
-        @include tablet{
-        width: 12rem;
-        height: 19rem;
-        
+        @include tablet {
+            width: 10rem;
+            height: 16rem;
+        }
+
+        @include desktop{
+        width: 10rem;
+        height: 16rem;
+        }
+
+        @include mid-desktop {
+            width: 14rem;
+            height: 22rem;
         }
 
 
@@ -119,10 +128,16 @@
         font-size: $xs-sz;
 
         @include tablet{
-        font-size: 2rem;
+        font-size: 1.2rem;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+        }
+        @include desktop{
+        font-size: 1.5rem;
+        }
+        @include mid-desktop{
+        font-size: 2rem;
         }
     }
 
@@ -131,6 +146,9 @@
         padding: 0 $s-pd;
         @include tablet{
         padding:0 $m-pd;
+        }
+        @include mid-desktop{
+            font-size: 1.1rem;
         }
     }
 
@@ -147,6 +165,9 @@
         text-align: center;
         font-weight: 600;
         @include tablet{
+        font-size: 1rem;
+        }
+        @include mid-desktop{
         font-size: 1.25rem;
         font-style: normal;
         line-height: normal;

@@ -11,6 +11,7 @@
         font-size: $s-sz;
         width: 100vw;
         z-index: 2;
+        cursor: url('../../assets/video/cursorAnimate.gif'), auto;
 
         @include tablet {
             font-size: $xxl-sz;
