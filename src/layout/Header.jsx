@@ -11,7 +11,7 @@ import Lottie from "lottie-react";
 function Header() {
   const [videoSource, setVideoSource] = useState(video1);
   const [showBars, setShowBars] = useState(false);
-
+const [showText, setShowText] = useState(false);
 
 
 
@@ -21,8 +21,11 @@ function Header() {
     const handleWheel = (event) => {
       if (event.deltaY !== 0) {
         setVideoSource(video2);
+        setShowText(true);
         setShowBars(true);
         removeEventListeners();
+
+
       }
     };
   
@@ -55,6 +58,13 @@ function Header() {
     <>
     
       <div className="header__video-container">
+      {!showText && (
+        <Fade delay={1000} triggerOnce >
+        <div className="header__scroll-container">
+        <p className="header__scroll">Scroll down to reveal more</p>
+        </div>
+        </Fade>
+      )}
       <video className="header__video" autoPlay loop muted src={video2} preload="auto" style={{display: "none"}} />
         <video className="header__video" autoPlay loop muted src={videoSource} preload="auto"  />
         
