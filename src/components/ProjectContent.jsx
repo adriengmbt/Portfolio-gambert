@@ -11,6 +11,30 @@ import InfoImg3 from "../assets/image/gowebInfo.jpg";
 import Anim from "../assets/Anim.json";
 import Lottie from "lottie-react";
 // Importez les images pour vos autres projets
+import imageHopteo from "../assets/image/hopteoScreen.png";
+import backgroundHopteo from "../assets/image/ranking_inge_commerce.webp";
+import imageHopteo2 from "../assets/image/training_presentation.webp"
+
+function ProjectZero() {
+  
+  return (
+    <>
+    <div className="project__container-background project__container-hopteo">
+      <img src={backgroundHopteo} alt="img" className="project__img-background-hopteo" />
+    </div>
+    <Project 
+      title="First Project"
+      image={imageHopteo}
+      description="I was part of the development of the application as a full stack developer"
+      tilte2 = "Hopteo"
+      description2 = "The Hopteo project is a website for a company specializing in the sale of products. The site is composed of several pages, a home page, a page presenting the company, a page presenting the services, a page presenting the news, a page presenting the contact information and a page presenting the legal information. The main goal is to make this simple, intuitive and secure for users."
+      image2 = {imageHopteo2}
+      link="https://hopteo.vercel.app/"
+    />
+    </>
+  );
+}
+
 
 function ProjectOne() {
   return (
@@ -20,7 +44,7 @@ function ProjectOne() {
     </div>
 
     <Project
-      title="First Project"
+      title="Second Project"
       image={img1}
       description="I was part of the development of the application as a full stack developer"
       tilte2 = "Rerseve Ton Logis"
@@ -40,7 +64,7 @@ function ProjectTwo() {
         <Lottie animationData={Anim} className="project__container-background" loop autoPlay	 />
 
       <Project
-        title="Second Project"
+        title="Third Project"
         image={img2}
         description="I was part of the development of the application as a front-end developer"
         tilte2= "Fondasol"
@@ -57,7 +81,7 @@ function ProjectThree() {
     return (
       <>
       <Project
-        title="Third Project"
+        title="Third fourth"
         image={img3}
         description=" Internship project as a full stack developer at Goweb during my second year of DUT"
         tilte2= "Goweb project"
@@ -76,4 +100,4 @@ function ProjectThree() {
     );
   }
 
-export { ProjectOne, ProjectTwo, ProjectThree };
+export { ProjectOne, ProjectTwo, ProjectThree , ProjectZero};

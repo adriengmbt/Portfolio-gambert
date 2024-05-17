@@ -49,7 +49,7 @@ main {
     @include tablet{
     display: flex;
     flex-direction: row;
-    width: 530vw;
+    width: 630vw;
     transform: rotate(90deg) translateY(-100vh);
     transform-origin: top left;
     }

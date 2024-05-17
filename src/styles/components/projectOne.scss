@@ -8,6 +8,17 @@
         height: 100vh;
     }
 
+
+
+    &__img-background-hopteo {
+        width: 10rem;
+        rotate: -25deg;
+
+        @include tablet{
+        width: 20rem;
+        }
+    }
+
     &__container-popup {
         position: absolute;
         top: 0;
@@ -37,6 +48,9 @@
         justify-content: space-around;
     }
 
+
+
+
     &__container-background {
         position: absolute;
         width: 100vw;
@@ -53,6 +67,8 @@
             height: 130vh;
         }
     }
+
+    
 
     &__sellotape {
         display: flex;
@@ -327,6 +343,15 @@
         @include desktop{
             font-size: 1.3rem;
         }
+
+    }
+
+
+    &__container-hopteo {
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        width: auto;
 
     }
 
