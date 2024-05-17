@@ -6,6 +6,12 @@
     }
   }
 
+  @mixin tablet-height {
+    @media only screen and (min-height: 600px) {
+      @content;
+    }
+  }
+
   
   @mixin desktop {
     @media only screen and (min-width: 1024px) {

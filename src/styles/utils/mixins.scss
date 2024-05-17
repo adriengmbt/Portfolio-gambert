@@ -4,7 +4,10 @@
     position: absolute;
     left: 0;
     width: 100vw;
-    height: 120px;
+    height: 80px;
     background-color: black;
     z-index: 1;
+    @include tablet-height {
+        height: 100px;
+    }
 }
