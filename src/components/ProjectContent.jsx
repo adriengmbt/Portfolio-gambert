@@ -2,13 +2,13 @@ import React from "react";
 import Project from "./Project"; // Assurez-vous de donner le bon chemin
 
 import img1 from "../assets/image/Diapo_soutenance.png";
-import img2 from "../assets/image/fondasol screen.png";
+import img2 from "../assets/image/fondasolNew.png";
 import img3 from "../assets/image/Goweb.png";
 import Svg from "./Svg";
 import InfoImg from "../assets/image/infoImg.png";
 import InfoImg2 from "../assets/image/fondasol2.png";
 import InfoImg3 from "../assets/image/gowebInfo.jpg";
-import AnimationProject2 from "../assets/Animation.json";
+import Anim from "../assets/Anim.json";
 import Lottie from "lottie-react";
 // Importez les images pour vos autres projets
 
@@ -37,9 +37,8 @@ function ProjectOne() {
 function ProjectTwo() {
   return (
     <>
-      <div className="project__container-background">
-      <Lottie animationData={AnimationProject2} className="projectTwo__img-background" />
-      </div>
+        <Lottie animationData={Anim} className="project__container-background" loop autoPlay	 />
+
       <Project
         title="Second Project"
         image={img2}
