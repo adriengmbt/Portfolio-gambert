@@ -69,10 +69,10 @@
     &__container-background {
         position: absolute;
         width: 100vw;
-        height: 70vh;
-
+        bottom: 16%;
         @include tablet{
             height: 115vh;
+            bottom: initial;
         }
         @include desktop{
             height: 120vh;
@@ -398,7 +398,7 @@
         align-items: end;
         justify-items: center;
         overflow: hidden;
-
+        bottom: 0;
     }
 
 
