@@ -164,6 +164,7 @@
 
     &__img-popup {
         width: 12rem;
+        padding-left: 0.5rem;
 
         @include tablet{
             width: 20rem;
@@ -190,6 +191,7 @@
         font-style: italic;
         max-height: 8rem;
         overflow: auto;
+        padding-right: 0.5rem;
 
         @include tablet{
             max-height: 15rem;
@@ -226,8 +228,7 @@
         cursor: pointer;
         transition: transform 0.5s ease-in-out;
         transform: rotate(0deg);
-    
-
+        font-size: 1.5rem;
         &:hover {
             transform: rotate(180deg);
         }
@@ -252,10 +253,11 @@
         }
 
         @include desktop{
-            margin: -5rem;
+            margin: -6rem;
+            width: 133%;
         }   
         @include big-desktop{
-            margin: -7.5rem;
+            margin: -7rem;
         }
     }
 
