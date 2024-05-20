@@ -13,6 +13,7 @@ import Lottie from "lottie-react";
 // Importez les images pour vos autres projets
 import imageHopteo from "../assets/image/hopteoScreen.png";
 import backgroundHopteo from "../assets/image/ranking_inge_commerce.webp";
+import backgroundHopteo2 from "../assets/image/many_cards.webp"
 import imageHopteo2 from "../assets/image/training_presentation.webp"
 
 function ProjectZero() {
@@ -21,6 +22,7 @@ function ProjectZero() {
     <>
     <div className="project__container-background project__container-hopteo">
       <img src={backgroundHopteo} alt="img" className="project__img-background-hopteo" />
+      <img src={backgroundHopteo2} alt="img" className="project__img-background-hopteo project__img-background-hopteo2 " />
     </div>
     <Project 
       title="First Project"

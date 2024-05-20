@@ -1,0 +1,11 @@
+.projectZero{
+    background: linear-gradient(#ffe4ad  0%, #F7F3E3 100%);
+    height: 50vh;
+    position: relative;
+    z-index: 100;
+    @include tablet{
+        background: linear-gradient(90deg, #ffe4ad  0%, #F7F3E3 100%);
+        height: 100vh;
+    }
+
+}
