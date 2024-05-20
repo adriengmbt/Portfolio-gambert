@@ -13,8 +13,8 @@ import Lottie from "lottie-react";
 // Importez les images pour vos autres projets
 import imageHopteo from "../assets/image/hopteoScreen.png";
 import backgroundHopteo from "../assets/image/ranking_inge_commerce.webp";
-import backgroundHopteo2 from "../assets/image/many_cards.webp"
-import imageHopteo2 from "../assets/image/training_presentation.webp"
+import imageHopteo2 from "../assets/image/many_cards.webp"
+import backgroundHopteo2 from "../assets/image/training_presentation.webp"
 
 function ProjectZero() {
   
@@ -27,11 +27,11 @@ function ProjectZero() {
     <Project 
       title="First Project"
       image={imageHopteo}
-      description="I was part of the development of the application as a full stack developer"
+      description="I participated in the development of the application as a front-end developer on React Native"
       tilte2 = "Hopteo"
-      description2 = "The Hopteo project is a website for a company specializing in the sale of products. The site is composed of several pages, a home page, a page presenting the company, a page presenting the services, a page presenting the news, a page presenting the contact information and a page presenting the legal information. The main goal is to make this simple, intuitive and secure for users."
+      description2 = "Hopteo is a DeepTech project created by students, for students. The objective is to help prep students discover and choose their future engineering or business school thanks to a modern, fun and comprehensive app. It centralizes and summarizes all the information available on hundreds of sites in a single platform. This information comes from Onisep, official school websites, as well as specialized sites (SCEI, SIGEM, etc.). Supported by the technology incubator IMT Mines Albi, Hopteo is working with the INETOP research center (Cnam), specializing in orientation psychology, to improve its algorithm and limit social bias. It defends with conviction the values ​​of transparency, equality and well-being and the mission is to relieve the stress linked to educational and professional guidance."
       image2 = {imageHopteo2}
-      link="https://hopteo.vercel.app/"
+      link="https://hopteo.com/"
     />
     </>
   );
@@ -83,7 +83,7 @@ function ProjectThree() {
     return (
       <>
       <Project
-        title="Third fourth"
+        title="Third Project"
         image={img3}
         description=" Internship project as a full stack developer at Goweb during my second year of DUT"
         tilte2= "Goweb project"
