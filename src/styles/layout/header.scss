@@ -26,7 +26,6 @@
         padding:  0.7rem ;
         font-size: 1.3rem;
         border-radius: 2rem;
-        z-index: 1000;
     }
 
     &__container {
@@ -129,10 +128,11 @@
         object-fit: cover;
         transition: all 0.5s ease-in-out;
         overflow: hidden;
-        z-index: -1;
+
+
 
         @include tablet{
-               z-index: -2;
+               z-index: -1;
         background-color: black;
           
         }
